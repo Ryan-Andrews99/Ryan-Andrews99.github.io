@@ -20,10 +20,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Install dependencies & build
+      - name: Node - Enable Corepack
+        run: corepack enable
+      - name: build
         run: |
-          yarn install --frozen-lockfile
           yarn build       
 
       - name: Deploy
