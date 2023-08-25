@@ -28,7 +28,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@11ty/eleventy", "npm:2.0.1"]\
+            ["@11ty/eleventy", "npm:2.0.1"],\
+            ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -105,6 +106,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["please-upgrade-node", "npm:3.2.0"],\
             ["ssri", "npm:8.0.1"],\
             ["ws", "virtual:35c7c2892d725266679f5535537b72095436bf58e40269ea2fd4e737cab6bba169c84ecd38a403932f3953289b9f6422aeac326691808b360ff3b62cd51b85f1#npm:8.13.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@11ty/eleventy-plugin-syntaxhighlight", [\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/@11ty-eleventy-plugin-syntaxhighlight-npm-5.0.0-aa41c33588-fb884f39e6.zip/node_modules/@11ty/eleventy-plugin-syntaxhighlight/",\
+          "packageDependencies": [\
+            ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"],\
+            ["prismjs", "npm:1.29.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -296,7 +307,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["Ryan-Andrews99.github.io", "workspace:."],\
-            ["@11ty/eleventy", "npm:2.0.1"]\
+            ["@11ty/eleventy", "npm:2.0.1"],\
+            ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2360,6 +2372,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["list-to-array", "npm:1.1.0"],\
             ["parse-srcset", "npm:1.0.2"],\
             ["promise-each", "npm:2.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prismjs", [\
+        ["npm:1.29.0", {\
+          "packageLocation": "./.yarn/cache/prismjs-npm-1.29.0-6faa5b04b8-007a8869d4.zip/node_modules/prismjs/",\
+          "packageDependencies": [\
+            ["prismjs", "npm:1.29.0"]\
           ],\
           "linkType": "HARD"\
         }]\
