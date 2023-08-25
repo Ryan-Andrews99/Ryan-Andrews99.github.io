@@ -12,18 +12,18 @@ jobs:
 
     steps:
       steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: Node - Enable Corepack
         run: corepack enable
-      - name: Check out repository code
-        uses: actions/checkout@v3
       - name: build
-        run: yarn build    
+        run: |
+        yarn install --frozen-lockfile
+        yarn build    
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./_site
-          github_token: ${{ secrets.GITHUB_TOKEN }}
