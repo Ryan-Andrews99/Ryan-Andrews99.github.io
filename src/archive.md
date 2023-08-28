@@ -2,16 +2,19 @@
 layout:  mylayout.njk
 title: Post Archives
 pagination:
-    data: collections.blogs
+    data: 
+    - collections.posts
+    - collections.reviews
+    - collections.recipies
     size: 5
-    alias: blogs
+    alias: posts
     reverse: true
     layout:  mylayout.njk
 ---
 <h2>Post Archives</h2>
 <ul>
-{% for blog in blogs %}
-<li><a href="{{ blog.url }}">{{ blog.data.title }}</a> <i>(written {{ blog.date | date: "%b %d, %Y"}})</i></li>
+{% for post in posts %}
+<li><a href="{{ post.url }}">{{ post.data.title }}</a> <i>(written {{ post.date | date: "%b %d, %Y"}})</i></li>
 {% endfor %}
 </ul>
 <p>
