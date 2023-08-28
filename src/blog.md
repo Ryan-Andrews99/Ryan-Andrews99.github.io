@@ -1,6 +1,7 @@
 ---
 title: Blog
 layout:  mylayout.njk
+eleventyExcludeFromCollections: true
 ---
 <h2>Blog posts</h2>
 {% assign blogs = collections.blogs | reverse %}

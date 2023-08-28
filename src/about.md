@@ -1,6 +1,7 @@
 ---
 layout: mylayout.njk
 title: About
+eleventyExcludeFromCollections: true
 ---
 
 ## :wave: Hi, I'm Ryan

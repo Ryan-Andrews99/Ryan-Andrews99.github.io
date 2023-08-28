@@ -1,6 +1,7 @@
 ---
 title: Projects
 layout:  mylayout.njk
+eleventyExcludeFromCollections: true
 ---
 
 ## Here are some projects I've recenty worked on:
