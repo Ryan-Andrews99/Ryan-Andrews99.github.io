@@ -1,11 +1,9 @@
 ---
 layout:  mylayout.njk
 title: Post Archives
+eleventyExcludeFromCollections: true
 pagination:
-    data: 
-    - collections.posts
-    - collections.reviews
-    - collections.recipies
+    data: collections.all
     size: 5
     alias: posts
     reverse: true
