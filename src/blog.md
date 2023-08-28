@@ -1,5 +1,5 @@
 ---
-title: Blog index
+title: Blog
 layout:  mylayout.njk
 ---
 <h2>Blog posts</h2>
@@ -9,4 +9,3 @@ layout:  mylayout.njk
     <a href="{{ blog.url }}">{{ blog.data.title }}</a> <i>(written {{ blog.date | date: "%b %d, %Y"}})</i>
     </p>
 {% endfor %}
-
