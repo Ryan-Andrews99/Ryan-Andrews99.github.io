@@ -6,6 +6,10 @@ const embedSpotify = require("eleventy-plugin-embed-spotify")
 module.exports = (eleventyConfig) => {
   eleventyConfig.addWatchTarget("style");
   eleventyConfig.addPassthroughCopy("src/assets/style.css")
+  eleventyConfig.addFilter("excerpt", (post) => {
+    const content = post.replace(/(<([^>]+)>)/gi, "");
+    return content.substr(0, content.lastIndexOf(" ", 300)) + "...";
+  })
   eleventyConfig.addPlugin(EleventyRenderPlugin)
   eleventyConfig.addPlugin(embedSpotify)
   eleventyConfig.addPlugin(syntaxHighlight)
