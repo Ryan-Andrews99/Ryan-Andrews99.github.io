@@ -9,7 +9,6 @@ pagination:
     reverse: true
     layout:  mylayout.njk
 ---
-<h2>Post Archives</h2>
 <ul>
 {% for post in posts %}
 <li><a href="{{ post.url }}">{{ post.data.title }}</a> <i>(written {{ post.date | date: "%b %d, %Y"}})</i></li>
