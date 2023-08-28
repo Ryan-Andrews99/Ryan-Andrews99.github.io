@@ -29,7 +29,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@11ty/eleventy", "npm:2.0.1"],\
-            ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"]\
+            ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"],\
+            ["markdown-it-emoji", "npm:2.0.2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -308,7 +309,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["Ryan-Andrews99.github.io", "workspace:."],\
             ["@11ty/eleventy", "npm:2.0.1"],\
-            ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"]\
+            ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"],\
+            ["markdown-it-emoji", "npm:2.0.2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1846,6 +1848,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["linkify-it", "npm:4.0.1"],\
             ["mdurl", "npm:1.0.1"],\
             ["uc.micro", "npm:1.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["markdown-it-emoji", [\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/markdown-it-emoji-npm-2.0.2-b64d35b1cb-e93ca19591.zip/node_modules/markdown-it-emoji/",\
+          "packageDependencies": [\
+            ["markdown-it-emoji", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

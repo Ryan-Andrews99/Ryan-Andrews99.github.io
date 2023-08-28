@@ -244,6 +244,7 @@ __metadata:
   dependencies:
     "@11ty/eleventy": ^2.0.1
     "@11ty/eleventy-plugin-syntaxhighlight": ^5.0.0
+    markdown-it-emoji: ^2.0.2
   languageName: unknown
   linkType: soft
 
@@ -1586,6 +1587,13 @@ __metadata:
     socks-proxy-agent: ^7.0.0
     ssri: ^10.0.0
   checksum: 7268bf274a0f6dcf0343829489a4506603ff34bd0649c12058753900b0eb29191dce5dba12680719a5d0a983d3e57810f594a12f3c18494e93a1fbc6348a4540
+  languageName: node
+  linkType: hard
+
+"markdown-it-emoji@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "markdown-it-emoji@npm:2.0.2"
+  checksum: e93ca19591b8dd543029e1997763e094a0861185f71403ffa522f09860da0a6457b3a2bd50e6e59cf1551b28ff464a2c2f596045a577323bd1d546cd1f0cc377
   languageName: node
   linkType: hard
 
