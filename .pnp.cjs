@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@11ty/eleventy", "npm:2.0.1"],\
             ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"],\
+            ["eleventy-plugin-embed-spotify", "npm:1.2.7"],\
             ["markdown-it-emoji", "npm:2.0.2"]\
           ],\
           "linkType": "SOFT"\
@@ -310,6 +311,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["Ryan-Andrews99.github.io", "workspace:."],\
             ["@11ty/eleventy", "npm:2.0.1"],\
             ["@11ty/eleventy-plugin-syntaxhighlight", "npm:5.0.0"],\
+            ["eleventy-plugin-embed-spotify", "npm:1.2.7"],\
             ["markdown-it-emoji", "npm:2.0.2"]\
           ],\
           "linkType": "SOFT"\
@@ -957,6 +959,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["ejs", "npm:3.1.9"],\
             ["jake", "npm:10.8.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["eleventy-plugin-embed-spotify", [\
+        ["npm:1.2.7", {\
+          "packageLocation": "./.yarn/cache/eleventy-plugin-embed-spotify-npm-1.2.7-8a89c87f54-eaf6b1f61a.zip/node_modules/eleventy-plugin-embed-spotify/",\
+          "packageDependencies": [\
+            ["eleventy-plugin-embed-spotify", "npm:1.2.7"]\
           ],\
           "linkType": "HARD"\
         }]\
