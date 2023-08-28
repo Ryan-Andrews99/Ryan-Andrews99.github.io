@@ -1,5 +1,5 @@
 ---
-title: Hello World!
+title:  👋 🌎 Hello World!
 layout: blogPost.njk
 tags: blogs
 date: 2023-08-28
@@ -23,7 +23,7 @@ I am not a frontend dev. Frontend development, has so far not scratched the same
 
 I've also taken some inspiration from one of my fellow Junior Developers on the Graduate Scheme, [Jake](https://jakedanielturner.co.uk/), so here is a shout out! :clap:
 
-## The Vibes: 
+## :sparkles: The Vibes: 
 At the time of writing, I'm trying to figure out what this blog will be. I still have a private Obsidian vault for my day to day notes. I think the frequency of posting here will try to be *week-to-week*, or more *ad-hoc*. The current conception of this blog is equal parts:
 - Somewhere to document my dev journey
 - Somewhere to store music and book reviews
@@ -34,3 +34,4 @@ However this could easily pan out to be more/less than what I expect it to be cu
 I'll sign off this post by including a spotify playlist of something I'm currently listening to. Hopefully see you soon! :wave:
 
 https://open.spotify.com/playlist/3rIBITd5d3HukcXCqxy5tC?si=840ef449d86a45c3
+

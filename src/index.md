@@ -10,6 +10,6 @@ eleventyExcludeFromCollections: true
     <a href="{{ post.url }}"> <h2>{{ post.data.title }}</h2></a> <i style="font-size:16px;">(written {{ post.date | date: "%b %d, %Y"}})</i>
     </p>
     <p>
-    {{post.content | excerpt}}
+    {{post.content 300 | excerpt}}
     </p>
 {% endfor %}
