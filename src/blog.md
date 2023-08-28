@@ -3,8 +3,10 @@ title: Blog index
 layout:  mylayout.njk
 ---
 <h2>Blog posts</h2>
-{% for blog in collections.blogs %}
+{% assign blogs = collections.blogs | reverse %}
+{% for blog in blogs limit:5  %}
     <p>
-    <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+    <a href="{{ blog.url }}">{{ blog.data.title }}</a> <i>(written {{ blog.date | date: "%b %d, %Y"}})</i>
     </p>
 {% endfor %}
+
