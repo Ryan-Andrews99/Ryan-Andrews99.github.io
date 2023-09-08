@@ -14,13 +14,13 @@ In JavaScript, functions are considered to be "first class citizens" values in t
 const triple = (x) => x*3
 
 const multiplyByThree = triple()
-console.log(multiplByThree(30)) //Returns 90
+console.log(multiplyByThree(30)) //Returns 90
 
 ```
 
-Therefore, as we see above this allows functions to be assigned to variables, but allso allows them to be passed as arguments to other functions or returned as values from functions. These functions that either take functions as thier argument or return values are called **Higher Order Functions**.
+Therefore, as we see above this allows functions to be assigned to variables, but also allows them to be passed as arguments to other functions or returned as values from functions. These functions that either take functions as their argument or return values are called **Higher Order Functions**.
 
-Higher order functions are good for compisition, ie they allow us to take lots of smaller functions, and pass them into larger functions, to create *readable, functional code*.
+Higher order functions are good for composition, ie they allow us to take lots of smaller functions, and pass them into larger functions, to create *readable, functional code*.
 
 The most common Higher Order Functions in JavaScript are the `Array.prototype.X` functions, which include: `Array.prototype.map`, `Array.prototype.filter`, and `Array.prototype.reduce`. These functions take a function as an argument and apply it to each element of an array to produce a new array.
 
@@ -69,7 +69,7 @@ return person.pet == "Dog"
 
 and it calls this for each element in the array, returning all entires which return true, and in our case true is where `person.pet == "Dog"`.
 
-This lends well to composability, as we can even assign our callback function to a variable:
+This lends well to *composability*, as we can even assign our callback function to a variable:
 
 ```ts
 const isDog = function(person : {name: string, pet: string}) {
@@ -84,7 +84,7 @@ console.log(
 
 Now our `isDog` function is decoupled from our filtering operation, and we can reuse this function in other places. 
 
-We can also rewrite our `isDog` funciton in a more modern arrow syntax way:
+We can also rewrite our `isDog` function in a more modern arrow syntax way:
 
 ```ts
 const isDog = ((person : {name: string, pet: string}) => person.pet == "Dog")
@@ -93,7 +93,7 @@ const isDog = ((person : {name: string, pet: string}) => person.pet == "Dog")
 
 ### Array.map()
 
-Map is another Higher Order Function in JS, that allows us to apply a transormation function to each element in an array, reurning a new array with the transformed elements.
+Map is another Higher Order Function in JS, that allows us to apply a transformation function to each element in an array, returning a new array with the transformed elements.
 
 Let's see how intelli-sense describes `Array.map`:
 
@@ -103,7 +103,7 @@ Let's see how intelli-sense describes `Array.map`:
 The syntax for using Array.map() is as follows:
 
 ``` ts
-array.map(function(currentValue, index, array) {   // return transformed value })
+array.map(function(currentValue, index, array) {   /* return transformed value */ })
 ```
 
 The `function` parameter is the **callback** transformation function that will be called on each element in the `array`. It takes three parameters:
@@ -112,7 +112,7 @@ The `function` parameter is the **callback** transformation function that will b
 -   `index`: the index of the current element being processed
 -   `array`: the array that `map()` was called upon
 
-The `function` should return the transformed value of the `currentValue`, which will be added to the new array. So whereas `Array.filter` expected a boolean which indcates if a value is included in our filtered array, map returns a **transformed value** from our original array.
+The `function` should return the transformed value of the `currentValue`, which will be added to the new array. So whereas `Array.filter` expected a boolean which indicates if a value is included in our filtered array, map returns a **transformed value** from our original array.
 
 Let's see an example:
 
@@ -158,7 +158,7 @@ The `callback` function takes two arguments: an `accumulator` and the current el
 
 The `callback` function should return the updated accumulator after processing the current element. The `reduce()` method then uses this updated accumulator as the input for the next iteration.
 
-Let's see what intelli-sense says abour `Array.reduce`:
+Let's see what intelli-sense says about `Array.reduce`:
 - _@param_ `callbackfn` — A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
 - _@param_ `initialValue` — If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
 
@@ -176,14 +176,14 @@ const arr1: {amount: number}[] = [
 arr1.reduce((currentTotal, currentValue) => currentTotal + currentValue.amount, 0) // returns 1975
 ```
 
-Here we have taken our `currentTotal` variable intial value to `0` (this is our final argument passed to our reduce function), and we have added each `currentValue.amount` to our `currentTotal`, which we return once we have applied our **callback function** to all elements in our array.
+Here we have taken our `currentTotal` variable initial value to `0` (this is our final argument passed to our reduce function), and we have added each `currentValue.amount` to our `currentTotal`, which we return once we have applied our **callback function** to all elements in our array.
 
 ### Advanced Array.reduce()
 
 The beauty of `Array.reduce()` is we can combine it with other functions, to modify arrays in all sorts of ways.
 
 
-For example let's start with some sample *tab-seperated* data about flowers:
+For example let's start with some sample *tab-separated* data about flowers:
 
 ```ts 
 const data: string = 
@@ -244,7 +244,7 @@ It works in the following way:
   
 * Our `.reduce` function takes the arguments `flowers, line, currentIndex`:
 	* `flowers` is our accumulator object, of type `flowerData`
-	* `line` is our current iteratable array, which will be the array from `.split` functions
+	* `line` is our current iterable array, which will be the array from `.split` functions
 	* `currentIndex` is our... currentIndex
 
 here this returns our output:
