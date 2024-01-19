@@ -3,7 +3,7 @@ layout: mylayout.njk
 title: Ryan Andrews
 eleventyExcludeFromCollections: true
 ---
-<b>24 | Junior Software Developer | :cityscape: London | :beach_umbrella: Margate</b>
+<b>24 | Software Developer | :cityscape: London | :beach_umbrella: Margate</b>
 {% assign posts = collections.all | reverse %}
 {% for post in posts limit:5  %}
     <p>
